@@ -1,11 +1,8 @@
 import "./App.css";
+import { AppContext } from "./context/contextApi";
 
 function App() {
-  return (
-    <>
-      <div className="text-lg bg-red-800">hello world </div>
-    </>
-  );
+  return <AppContext>hello</AppContext>;
 }
 
 export default App;
