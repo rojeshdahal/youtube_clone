@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const LeftNavMenuItem = ({ text, icon, className, action }) => {
   return (
     <div
@@ -11,6 +13,13 @@ const LeftNavMenuItem = ({ text, icon, className, action }) => {
       {text}
     </div>
   );
+};
+
+LeftNavMenuItem.propTypes = {
+  text: PropTypes.string.isRequired,
+  icon: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  action: PropTypes.func.isRequired,
 };
 
 export default LeftNavMenuItem;
